@@ -9,17 +9,6 @@ import android.view.View;
  */
 public class ${componentName}MvpFragment extends BaseMvpFragment<${componentName}Presenter> implements ${componentName}Contract.${componentName}View {
 
-
-    @Override
-    protected int getFragmentLayoutId() {
-      return R.layout.${layoutName};
-    }
-
-    @Override
-    protected ${componentName}Presenter createPresenter() {
-        return new ${componentName}Presenter();
-    }
-
     @Override
     protected void initData() {
 
@@ -31,17 +20,28 @@ public class ${componentName}MvpFragment extends BaseMvpFragment<${componentName
     }
 
     @Override
-    public void onError(Object o, String msg) {
+    public void onSucceed(Object o) {
 
     }
 
     @Override
-    public void onSucceed(Object o, String msg) {
+    public void onError(int errorCode, String errorMessage) {
 
     }
+
 
     @Override
     public void onCompleted() {
 
+    }
+
+    @Override
+    protected int getFragmentLayoutId() {
+      return R.layout.${layoutName};
+    }
+
+    @Override
+    protected ${componentName}Presenter createPresenter() {
+        return new ${componentName}Presenter();
     }
 }

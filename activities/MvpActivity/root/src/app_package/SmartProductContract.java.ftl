@@ -8,16 +8,16 @@ package ${packageName};
 public class ${componentName}Contract {
 
     interface ${componentName}View extends BaseView {
-        /**
-         * 获取出错了
-         */
-        void onError(Object o, String msg);
-
-        /**
+        
+	/**
          *
          * */
-        void onSucceed(Object o, String msg);
+        void onSucceed(Object o);
 
+ 	/**
+         * 获取出错了
+         */
+        void onError(int errorCode, String errorMessage);
         /**
          * 任意情况
          */

@@ -1,7 +1,6 @@
 package ${packageName};
 
 
-
 /**
  * @author wghcwc
  */
@@ -13,6 +12,20 @@ public class ${componentName}MvpActivity extends BaseNavMvpActivity<${componentN
         
     }
 
+    @Override
+    public void onSucceed(Object o) {
+
+    }
+
+    @Override
+    public void onError(int errorCode, String errorMessage) {
+
+    }
+
+    @Override
+    public void onCompleted() {
+
+    }
 
     @Override
     protected int getContentViewId() {
@@ -24,28 +37,9 @@ public class ${componentName}MvpActivity extends BaseNavMvpActivity<${componentN
         return "";
     }
 
-
     @Override
     protected ${componentName}Presenter createPresenter() {
         return new ${componentName}Presenter();
-    }
-
-
-    @Override
-    public void onError(Object o, String msg) {
-       
-
-    }
-
-    @Override
-    public void onSucceed(Object o, String msg) {
-       
-
-    }
-
-    @Override
-    public void onCompleted() {
-
     }
 
     

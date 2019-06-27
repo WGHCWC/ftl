@@ -9,7 +9,7 @@ public class ${componentName}MvpActivity extends BaseMvpActivity<${componentName
 
     @Override
     protected void initView() {
-        StatusBarCompat.setStatusBarColor(this, getResources().getColor(R.color.white));
+    
        
 
     }
@@ -18,6 +18,22 @@ public class ${componentName}MvpActivity extends BaseMvpActivity<${componentName
     @Override
     protected void initData() {
        
+    }
+
+    @Override
+    public void onSucceed(Object o) {
+
+    }
+
+    @Override
+    public void onError(int errorCode, String errorMessage) {
+
+    }
+
+
+    @Override
+    public void onCompleted() {
+
     }
 
     @Override
@@ -32,20 +48,6 @@ public class ${componentName}MvpActivity extends BaseMvpActivity<${componentName
 
  
   
-    @Override
-    public void onError(Object o, String msg) {
-
-    }
-
-    @Override
-    public void onSucceed(Object o, String msg) {
-
-    }
-
-    @Override
-    public void onCompleted() {
-
-    }
 
 
 }

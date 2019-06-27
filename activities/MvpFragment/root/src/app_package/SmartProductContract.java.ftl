@@ -9,14 +9,14 @@ public class ${componentName}Contract {
 
     interface ${componentName}View extends BaseView {
         /**
-         * 获取出错了
-         */
-        void onError(Object o, String msg);
+         *获取成功
+         * */
+        void onSucceed(Object o);
 
         /**
-         *
-         * */
-        void onSucceed(Object o, String msg);
+         * 获取出错了
+         */
+        void onError(int errorCode, String errorMessage);
 
         /**
          * 任意情况
@@ -24,6 +24,7 @@ public class ${componentName}Contract {
         void onCompleted();
 
     }
+
 
     interface ${componentName}Presenter {
 

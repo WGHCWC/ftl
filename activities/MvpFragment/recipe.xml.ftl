@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <#import "root://activities/common/kotlin_macros.ftl" as kt>
 <recipe>
-    <#include "../common/recipe_manifest.xml.ftl" />
+  
     <@kt.addAllKotlinDependencies />
 
 <#if generateLayout>
